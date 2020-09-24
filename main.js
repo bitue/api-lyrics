@@ -41,7 +41,7 @@ async function fetchData(){
         const getAttr = getidd.getAttribute('id')
         // console.log(getAttr)
         getLyrics(getAttr)
-        console.log(getAttr)
+        // console.log(getAttr)
     })
 
      async function getLyrics(getid){
@@ -57,7 +57,7 @@ async function fetchData(){
         // fetch("https://private-anon-14752d0fe4-lyricsovh.apiary-proxy.com/v1/Coldplay/Adventure of a Lifetime")
         const response = await fetch(lyricsApiTemplate)
         const resLyrics = await response.json()
-        console.log(resLyrics["lyrics"])
+        // console.log(resLyrics["lyrics"])
         document.getElementById("lyrics").innerText=""
         
         document.getElementById("lyrics").innerText = resLyrics["lyrics"]
