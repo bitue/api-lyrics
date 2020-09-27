@@ -26,7 +26,7 @@ async function fetchData(){
     const data = await  fetchData.json()
     const dataArray = await data.data
     // console.log(dataArray)
-    const dataNumber =dataArray.slice(0,5)
+    const dataNumber =dataArray.slice(0,7)
     for (let i = 0; i < dataNumber.length; i++) {
         const element = dataNumber[i];
         document.getElementById("title "+i).innerText = element.title
